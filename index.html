@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheConnect</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('back.png');">
+  <!-- Header -->
+  <header>
+    <h1>SheConnect</h1>
+    <p>Your gateway to empowering communities</p>
+  </header>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <h2>Get Personalized Recommendations</h2>
+    <form id="recommendationForm" onsubmit="submitForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="careerField">Career Field:</label>
+      <input type="text" id="careerField" name="careerField" placeholder="e.g., Tech, Finance" required>
+
+      <label for="profession">Profession:</label>
+      <input type="text" id="profession" name="profession" placeholder="e.g., Software Engineer, Student" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="e.g., Abuja, Nigeria" required>
+
+      <button type="submit" onclick="result.html">Get Recommendations</button>
+    </form>
+  </section>
+
+ <!-- Recommendation Section -->
+ <section class="recommendations">
+  <h2>Latest recommendations</h2>
+  <div class="community-card" id="community1">
+    <h3>Women in Tech - Lagos</h3>
+    <p>A supportive network for women in technology, offering resources, mentorship, and events.</p>
+    <button>Learn More</button>
+  </div>
+  <div class="community-card" id="community2">
+    <h3>Finance Queens - New York</h3>
+    <p>Connect with other women in finance to share knowledge, job opportunities, and career growth tips.</p>
+    <button>Learn More</button>
+  </div>
+</section>
+
+  <!-- JavaScript for Form Handling -->
+  <script src="script.js"></script>
+</body>
+</html>
